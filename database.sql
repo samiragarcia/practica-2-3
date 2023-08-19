@@ -18,12 +18,10 @@ CREATE TABLE primer_tabla(
 
     SELECT * FROM primer_tabla;
 
-    INSERT INTO primer_tabla (marca,color,año) VALUES ("peugeot","negro","2022");
-    INSERT INTO primer_tabla (marca,color,año) VALUES "(peugeot","rojo","2017");
-    INSERT INTO primer_tabla (marca,color,año) VALUES ("for fiesta","negro","2008");
-    INSERT INTO primer_tabla (marca,color,año) VALUES ("wolsvagen polo","negro","2020");
-    INSERT INTO primer_tabla (marca,color,año) VALUES ("for ecosport","azul","2021");
-    INSERT INTO primer_tabla (marca,color,año) VALUES ("honda civic","negro","2022");
+    INSERT INTO primer_tabla (marca,color,año,modelo) VALUES ("peugeot","negro","2022","style");
+    INSERT INTO primer_tabla (marca,color,año,modelo) VALUES ("for fiesta","negro","2008","kinetic");
+    INSERT INTO primer_tabla (marca,color,año,modelo) VALUES ("wolsvagen polo","negro","2020","trend");
+    INSERT INTO primer_tabla (marca,color,año,modelo) VALUES ("for ecosport","azul","2021","freestyle");
 
     UPDATE primer_tabla SET color = “blanco” WHERE id_registro = 2;
 

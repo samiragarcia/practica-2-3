@@ -1,6 +1,6 @@
 import { createPool } from "mysql2/promise";
 
-const pool = createpool({
+const pool = createPool({
     host: "localhost",
     port: 3306,
     user: "root",
@@ -15,8 +15,8 @@ await agregarAutos("for fiesta", "negro", 2008);
 
 
 async function agregarAutos(marca, color, año) {
-    let resultadoCrear = await pool.query(`INSERT INTO primer_tabla (marca,color,año)
-    VALUES (?, ?, ?);`, [marca, color, año]);
+    let resultadoCrear = await pool.query(`INSERT INTO primer_tabla (marca,color,año,modelo)
+    VALUES (?, ?, ?, ?);`, [marca, color, año, modelo]);
 
 
 
